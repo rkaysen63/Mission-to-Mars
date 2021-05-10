@@ -17,9 +17,9 @@ This project is a web-page designed to scrape data and images about "The Red Pla
 ## Resources
 
 * Websites Scraped:
-  * https://data-class-mars.s3.amazonaws.com/Mars
-  * https://data-class-jpl-space.s3.amazonaws.com/JPL_Space
-  * https://data-class-mars-facts.s3.amazonaws.com/Mars_Facts
+  * https://redplanetscience.com/
+  * https://spaceimages-mars.com/
+  * https://galaxyfacts-mars.com
   * https://marshemispheres.com
 * Tools: 
   * Python 3.7.9 in Jupyter Notebook interface
