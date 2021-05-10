@@ -31,9 +31,9 @@ This project is a web-page designed to scrape data and images about "The Red Pla
 
 ## Results:
 
-* **Mars Hemispheres:** List of Dictionaries containing image URLs and image titles
+### **Mars Hemispheres:** List of Dictionaries containing image URLs and image titles
 <p align="center">
-  <img src="image_files/del_1_list.png" width="800">
+  <img src="image_files/del_1_list.png" width="600">
 </p>
 
     # Import Splinter and BeautifulSoup
@@ -106,10 +106,12 @@ This project is a web-page designed to scrape data and images about "The Red Pla
     # Quit the browser
     browser.quit()
 
-* **Mars Hemispheres:** `def mars_hemispheres(browser)` Function to retrieve the full-resolution image URL and title for each Martian hemisphere image 
+### **Mars Hemispheres:** `def mars_hemispheres(browser)` Function to retrieve the full-resolution image URL and title for each Martian hemisphere image 
 <p align="center">
   <img src="image_files/del_2_mars_hemispheres.png" width="800">
 </p>
+
+!!! indent the entire function into coding syntax !!!
 
 # Function to scrape Mars Images
 def mars_hemispheres(browser):
@@ -166,9 +168,30 @@ def mars_hemispheres(browser):
 
     return hemisphere_image_urls
     
-* **Mongo database:** mars_app, mars collection
+ ---------------------------------------------------------------
+   
+      <!-- Section for Mars Hemispheres -->
+      <div class="row" id="mars-hemispheres">
+        <div class="page-header">
+          <h2 class="text-center">Mars Hemispheres</h2>
+        </div>
+
+        {% for hemisphere in mars.hemispheres %}
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="...">
+            <div class="caption">
+              <h3>{{hemisphere.title}}</h3>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    
+    
+### **Mongo database:** mars_app, mars collection
 <p align="center">
-  <img src="image_files/del_2_mars_app.png" width="800">
+  <img src="image_files/del_2_mars_app.png" width="1000">
 </p>
 
     (PythonData) PS C:\Users\kayse\OneDrive\Documents\GitHub\Mission-to-Mars> mongo
