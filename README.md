@@ -191,7 +191,7 @@ This project is a web-page designed to scrape data and images about "The Red Pla
     
     
 * **Mongo database:** 
- mars_app, mars collection
+ mars_app, collection: mars
 
 <p align="center">
   <img src="image_files/del_2_mars_app.png" width="1000">
