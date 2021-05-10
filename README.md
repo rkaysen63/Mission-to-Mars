@@ -208,8 +208,8 @@ This project is a web-page designed to scrape data and images about "The Red Pla
   <img src="image_files/del_3_homepage.png" width="1000">
 </p>
 
-* The HTML uses Bootstrap4's responsive grid layout.
-* Custom Jumbotron Background color - Rust and Custom Button Color - Grey
+* The webpage is responsive and mobile ready due to Bootstrap 4's grid system.
+* The Jumbotron background color was changed to rust and the botton color changed to grey.
 
       <!-- Add Jumbotron to Header -->
       <div class="jumbotron text-center" style="background-color: rgba(233, 138, 75, 0.904)">
@@ -219,7 +219,7 @@ This project is a web-page designed to scrape data and images about "The Red Pla
           href="/scrape" role="button">Scrape New Data</a></p>
       </div>
 
-* Custom Text Alignment - Centered text "Mars Facts" above the table.
+* "Mars Facts" was centered above the table.
 
         <!-- Mars Facts -->
         <div class="row" id="mars-facts">
@@ -227,7 +227,7 @@ This project is a web-page designed to scrape data and images about "The Red Pla
           {{ mars.facts | safe }}
         </div>
 
-* Custom Thumbnails - Displayed four Mars hemispheres in one row.
+* Using the Bootstrap 4 grid system, the four Mars hemisphere thumbnails were displayed in a single row.  See opening image above the Table of Contents.
   
         {% for hemisphere in mars.hemispheres %}
         <div class="col-md-3">
