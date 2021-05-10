@@ -31,11 +31,12 @@ This project is a web-page designed to scrape data and images about "The Red Pla
 
 ## Results:
 
-### **Mars Hemispheres:**
-List of Dictionaries containing image URLs and image titles
+### **Mars Hemispheres:** 
+
+* **List of Dictionaries containing image URLs and image titles**
 
 <p align="center">
-  <img src="image_files/del_1_list.png" width="600">
+  <img src="image_files/del_1_list.png" width="700">
 </p>
 
     # Import Splinter and BeautifulSoup
@@ -108,8 +109,7 @@ List of Dictionaries containing image URLs and image titles
     # Quit the browser
     browser.quit()
 
-### **Mars Hemispheres:** 
-`def mars_hemispheres(browser)` Function to retrieve the full-resolution image URL and title for each Martian hemisphere image 
+* **Function to retrieve the full-resolution image URL and title for each Martian hemisphere image** 
 
 <p align="center">
   <img src="image_files/del_2_mars_hemispheres.png" width="800">
@@ -191,7 +191,7 @@ List of Dictionaries containing image URLs and image titles
       </div>
     
     
-### **Mongo database:** 
+* **Mongo database:** 
 mars_app, mars collection
 
 <p align="center">
@@ -201,7 +201,7 @@ mars_app, mars collection
     (PythonData) PS C:\Users\kayse\OneDrive\Documents\GitHub\Mission-to-Mars> mongo
     (PythonData) PS C:\Users\kayse\OneDrive\Documents\GitHub\Mission-to-Mars> db.mars.find().pretty()
     
-### **Customization
+* **Web Page Customization 
 
 <p align="center">
   <img src="image_files/del_3_homepage.png" width="1000">
