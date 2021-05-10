@@ -8,7 +8,6 @@
 * [Overview](https://github.com/rkaysen63/Mission-to-Mars/blob/master/README.md#overview)
 * [Resources](https://github.com/rkaysen63/Mission-to-Mars/blob/master/README.md#resources)
 * [Results](https://github.com/rkaysen63/Mission-to-Mars/blob/master/README.md#results)
-* [Summary](https://github.com/rkaysen63/Mission-to-Mars/blob/master/README.md#summary)
 
 ## Overview:
 
@@ -31,9 +30,7 @@ This project is a web-page designed to scrape data and images about "The Red Pla
 
 ## Results:
 
-### **Mars Hemispheres:** 
-
-* **List of Dictionaries containing image URLs and image titles**
+### Mars Hemispheres: List of Dictionaries Containing Image URLs and their Titles
 
 <p align="center">
   <img src="image_files/del_1_list.png" width="700">
@@ -109,7 +106,9 @@ This project is a web-page designed to scrape data and images about "The Red Pla
     # Quit the browser
     browser.quit()
 
-* **Function to retrieve the full-resolution image URL and title for each Martian hemisphere image** 
+### Mars Hemispheres: Function `def mars_hemispheres(browser):`
+
+* Function added to `scraping.py` to retrieve the full-resolution image URL and title for each Martian hemisphere image.
 
 <p align="center">
   <img src="image_files/del_2_mars_hemispheres.png" width="800">
@@ -170,7 +169,7 @@ This project is a web-page designed to scrape data and images about "The Red Pla
 
         return hemisphere_image_urls
     
- ---------------------------------------------------------------
+ * **HTML** Code to Display Mars Hemispheres on Webpage:
    
       <!-- Section for Mars Hemispheres -->
       <div class="row" id="mars-hemispheres">
@@ -192,23 +191,25 @@ This project is a web-page designed to scrape data and images about "The Red Pla
     
     
 * **Mongo database:** 
-mars_app, mars collection
+ mars_app, mars collection
 
 <p align="center">
   <img src="image_files/del_2_mars_app.png" width="1000">
 </p>
 
+  The Mongo database that holds the "mars" collection is called "mars-app".  Code to check for updates:
+
     (PythonData) PS C:\Users\kayse\OneDrive\Documents\GitHub\Mission-to-Mars> mongo
     (PythonData) PS C:\Users\kayse\OneDrive\Documents\GitHub\Mission-to-Mars> db.mars.find().pretty()
     
-* **Web Page Customization 
+### Mobile Ready and Web Page Customization
 
 <p align="center">
   <img src="image_files/del_3_homepage.png" width="1000">
 </p>
 
-* Jumbotron Background color - Rust
-* Button Color - Grey
+* The HTML uses Bootstrap4's responsive grid layout.
+* Custom Jumbotron Background color - Rust and Custom Button Color - Grey
 
       <!-- Add Jumbotron to Header -->
       <div class="jumbotron text-center" style="background-color: rgba(233, 138, 75, 0.904)">
@@ -218,7 +219,7 @@ mars_app, mars collection
           href="/scrape" role="button">Scrape New Data</a></p>
       </div>
 
-* Center Text "Mars Facts" above the table.
+* Custom Text Alignment - Centered text "Mars Facts" above the table.
 
         <!-- Mars Facts -->
         <div class="row" id="mars-facts">
@@ -226,7 +227,7 @@ mars_app, mars collection
           {{ mars.facts | safe }}
         </div>
 
-* Thumbnails - Display four Mars hemispheres in one row
+* Custom Thumbnails - Displayed four Mars hemispheres in one row.
   
         {% for hemisphere in mars.hemispheres %}
         <div class="col-md-3">
