@@ -73,7 +73,8 @@ df.set_index('description', inplace=True)
 df
 
 # Convert DataFrame back into HTML-ready code using .to_html() function.
-df.to_html()
+df.to_html(classes="table table-striped")
+
 
 
 # # Mission to Mars Challenge
