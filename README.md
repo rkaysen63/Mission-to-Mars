@@ -1,7 +1,7 @@
 # Mission-to-Mars
 
 <p align="center">
-  <img src="image_files/del_3_mars_hemispheres.png" width="800">
+  <img src="image_files/del_3_homepage.png" width="1000">
 </p>
 
 ## Table of Contents
@@ -205,11 +205,11 @@ This project is a web-page designed to scrape data and images about "The Red Pla
 ### Mobile Ready and Web Page Customization
 
 <p align="center">
-  <img src="image_files/del_3_homepage.png" width="1000">
+  <img src="image_files/del_3_mobile_ready.png" width="300">
 </p>
 
-* The webpage is responsive and mobile ready due to Bootstrap 4's grid system.
-* The Jumbotron background color was changed to rust and the botton color changed to grey.
+* The webpage is responsive and mobile ready due to Bootstrap 4's grid system.  
+* The Jumbotron background color was changed to rust and the button color changed to grey.
 
       <!-- Add Jumbotron to Header -->
       <div class="jumbotron text-center" style="background-color: rgba(233, 138, 75, 0.904)">
@@ -226,6 +226,11 @@ This project is a web-page designed to scrape data and images about "The Red Pla
           <h3 class="text-center">Mars Facts</h3>
           {{ mars.facts | safe }}
         </div>
+
+
+<p align="center">
+  <img src="image_files/del_3_mars_hemispheres.png" width="800">
+</p>
 
 * Using the Bootstrap 4 grid system, the four Mars hemisphere thumbnails were displayed in a single row.  See opening image above the Table of Contents.
   
